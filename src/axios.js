@@ -3,7 +3,9 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const instance = axios.create({
-    baseURL: process.env.REACT_APP_API || "https://pi-dogs-api.vercel.app"
+    
+    baseURL:  "https://pi-dogs-api.vercel.app"
+    // baseURL: process.env.REACT_APP_API || "https://pi-dogs-api.vercel.app"
 });
 
 export default instance;
